@@ -1,0 +1,2 @@
+module JobapiHelper
+end

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kon</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+        <style>
+            body {    
+              font-family: Arial, Helvetica, sans-serif;
+              margin: 0;    
+            }        
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #C0C0C0;
+            }
+            li {
+                float: left;
+            }
+            li a.nav {
+                display: block;
+                color: #FFFFFF;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #00BFFF;
+            }
+            
+            .nav-right { 
+                padding-top: 2px;
+                float:right;
+            }
+            .container {
+                margin-left: 100px; 
+                margin-right: 100px;   
+                } 
+            .content {
+                padding-left: 100px; 
+                padding-right: 100px; 
+                line-height: 1.8;
+                font-size: 18px;
+                word-wrap: break-word;
+                width: 700px;
+                } 
+    </style>                
+  </head>
+
+  <body>
+<ul>
+    <div class="container">
+      <li><a class="active nav" href="#home"><big><strong>Docimer Docs</strong></big></a></li>
+      <span class="nav-right">    
+          <li><a href="#installation" class="nav">Installation</a></li>
+          <li><a href="#using-docimer" class="nav">Using Docimer</a></li>
+          <li><a href="#about" class="nav">About</a></li>
+      </span>    
+    </div>    
+</ul>  
+  
+    <%= yield %>
+  </body>
+</html>
