@@ -1,19 +1,6 @@
-# README
+# README for KON [sample rails app]
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Rails app consuming API on path => /jobapi/index 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
+* http://localhost:3000/jobapi/index
 
